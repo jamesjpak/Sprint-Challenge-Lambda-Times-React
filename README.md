@@ -29,9 +29,30 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+PropTypes are used for verifying the type of data being passed in components.  It is crucial to type check our data in Javascript to catch bugs that can easily occur from props not being properly passed through many branches of components.  Furthermore, there are additional methods in the PropTypes library that can specify what data is to be passed through.  
+
+
 - [ ] Describe a life-cycle event in React?
+
+One life-cycle event in React is componentDidMount.  componentDidMount is a method that is called after the component is rendered once.  Inserting API calls inside componentDidMount will ensure data is fetched from the client.  
+
+
 - [ ] Explain the details of a Higher Order Component?
+
+A Higher Order Component is essentially a function that takes in a component as an argument, and returns a new component.  This is important because we can create a container for our components, and this allows us to write checks to conditionally render desired components.  
+
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+
+One way to style components in React is via CSS files, and importing the CSS files to respective components.  Personally I believe this way is the most beneficial to file structure organization by having distinct CSS and JS files.  
+
+A second way to style components is via bootstrap and reactstrap.  Bootstrap and reactstrap are JS libraries that hold template components that are already styled and one can directly insert into the JSX.  The benefit to using bootstrap is access to a vast selection of preset styles and features that can easily be inserted into code.  
+
+A third way of styling components is another library called styled-components.  Styled-components is a method through which we can write CSS in our JS.  This is done by directly writing our CSS in template literal on a styled default object property.  This method does not require a CSS files to exist.  
+
+
+
 
 ## Project Setup
 
